@@ -1,0 +1,11 @@
+I've noticed that one consistently unexplained, or poorly explained, difference you experience when switching from central repo to distributed, is the way the tool -- version control in general -- is used. For example, how many times have you as a programmer sat and stared at the code thinking, "I have an idea of how to fix this, but it's a lot of code to change, and I can't fully see the end of the change to be certain it will work." Back and forth, back and forth, without typing a line of code.
+
+So, you jump in and start making the change, but it's three days of solid wall-to-wall coding, and you can't do a commit because it will screw up the repository -- you don't commit incomplete changes, right?
+
+Imagine if you can, that you could do a commit. Multiple times. Without any impact whatsoever on your mates. Some places you might stumble, and can revert the code back -- not to the beginning, but to some intermediate stage of the code change. Why did you wait to jump in to begin with, you wonder! Freedom!
+
+This is what happens when you have a distributed repository. It takes a while, and I've noticed some folks don't even realise that they've changed behaviour. Why is this different? Because you can do a dozen local commits and not even worry if the code compiles, let alone runs. And you don't have to push to the central repository until one of your local commits does compile and run. No disruption on anyone else doing concurrent development. Commit often, pull often, push once.
+
+It's not that you can't do that on TFS, but to do it, you have to have a separate branch for every programmer, and merges become a real nightmare. Times to complete merges become a stumbling block. So folks just don't do that, instead they sit and stare at the code and wonder, "If I start down this path, will it work?"
+
+As for TFS being retired, they do host Git, so the product won't go away. And it does offer something Git cannot -- locking. There are some files, mostly binary, that cannot be merged and thus should be locked/checked-out to prevent concurrent development. Git can't do this.
