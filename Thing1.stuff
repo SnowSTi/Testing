@@ -11,4 +11,4 @@ It's not that you can't do that on TFS, but to do it, you have to have a separat
 As for TFS being retired, they do host Git, so the product won't go away. And it does offer something Git cannot -- locking. There are some files, mostly binary, that cannot be merged and thus should be locked/checked-out to prevent concurrent development. Git can't do this.
 
 
-Headed to Feature 1 branch  More changes
+Headed to Feature 1 branch  More changes  oops stuff
