@@ -9,3 +9,6 @@ This is what happens when you have a distributed repository. It takes a while, a
 It's not that you can't do that on TFS, but to do it, you have to have a separate branch for every programmer, and merges become a real nightmare. Times to complete merges become a stumbling block. So folks just don't do that, instead they sit and stare at the code and wonder, "If I start down this path, will it work?"
 
 As for TFS being retired, they do host Git, so the product won't go away. And it does offer something Git cannot -- locking. There are some files, mostly binary, that cannot be merged and thus should be locked/checked-out to prevent concurrent development. Git can't do this.
+
+
+Headed to Feature 1 branch
